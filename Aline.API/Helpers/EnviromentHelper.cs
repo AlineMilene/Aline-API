@@ -1,5 +1,3 @@
-using System;
-
 namespace Aline.API.Helpers
 {
     public class EnviromentHelper

@@ -1,4 +1,3 @@
-using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Aline.API.Models
@@ -10,7 +9,6 @@ namespace Aline.API.Models
 
         [JsonPropertyName("nomeCompleto")]
         public string NomeCompleto { get; set; }
-
 
         [JsonPropertyName("telefone")]
         public long Telefone { get; set; }

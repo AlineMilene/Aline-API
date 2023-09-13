@@ -1,4 +1,3 @@
-using System;
 using System.Net;
 using Aline.API.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -21,11 +20,11 @@ public class ClienteController : ControllerBase
     {
         try
         {
-            return Ok();
+            return Ok(cliente);
         }
         catch (Exception e)
         {
-            System.Console.WriteLine(e);
+            Console.WriteLine(e);
             return StatusCode((int)HttpStatusCode.InternalServerError, HttpStatusCode.InternalServerError.ToString());
         }
     }
@@ -39,7 +38,7 @@ public class ClienteController : ControllerBase
         }
         catch (Exception e)
         {
-            System.Console.WriteLine(e);
+            Console.WriteLine(e);
             return StatusCode((int)HttpStatusCode.InternalServerError, HttpStatusCode.InternalServerError.ToString());
         }
     }
@@ -53,7 +52,7 @@ public class ClienteController : ControllerBase
         }
         catch (Exception e)
         {
-            System.Console.WriteLine(e);
+            Console.WriteLine(e);
             return StatusCode((int)HttpStatusCode.InternalServerError, HttpStatusCode.InternalServerError.ToString());
         }
     }
